@@ -14,19 +14,20 @@
 <body>
     <div class="main-container">
 
-        <nav class="box menu">
+ <header class="menu">
+    <h1><i class="fa-solid fa-cloud"></i> Fluffy</h1>
 
-            <h1><i class="fa-solid fa-cloud fa-sm"></i>Fluffy</h1>
-            <i class="fa-solid fa-bars fa-lg hamburguesa"></i>
-            <ul class="links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#oferta">Ofertas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+    <i class="fa-solid fa-bars hamburguesa" id="menuBtn"></i>
 
-        </nav>
-
+    <nav>
+        <ul class="links" id="menuLinks">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
         <aside class="box filtros">
 
@@ -142,9 +143,20 @@
         </footer>
 
     </div>
+                            
+<script>
+const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("menuLinks");
+
+btn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+</script>
+                            
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+                            
 </body>
 
 </html>
