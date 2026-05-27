@@ -1,168 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluffy</title>
+
     <script src="https://kit.fontawesome.com/505307b769.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="main-container">
 
- <header class="menu">
-    <h1><i class="fa-solid fa-cloud"></i> Fluffy</h1>
+<div class="main-container">
 
-    <i class="fa-solid fa-bars hamburguesa" id="menuBtn"></i>
+    <!-- MENU -->
+    <header class="menu">
+        <h1><i class="fa-solid fa-cloud"></i> Fluffy</h1>
 
-    <nav>
-        <ul class="links" id="menuLinks">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#catalogo">Catálogo</a></li>
-            <li><a href="#ofertas">Ofertas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+        <i class="fa-solid fa-bars hamburguesa" id="menuBtn"></i>
 
-        <aside class="box filtros">
+        <nav>
+            <ul class="links" id="menuLinks">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <label for="Edad">Ordenar Por:</label>
-            <select name="Edad" id="edad">
-                <option value="menor-mayor">Precio</option>
-                <option value="mayor-menor">Mayor a menor</option>
-                <option value="mayor-menor">Menor a mayor</option>
-            </select>
+    <!-- FILTROS -->
+    <aside class="box filtros">
+        <label>Ordenar por:</label>
+        <select>
+            <option>Precio</option>
+            <option>Mayor a menor</option>
+            <option>Menor a mayor</option>
+        </select>
+    </aside>
 
-        </aside>
+    <!-- PRODUCTOS -->
+    <main class="box main">
 
+        <div class="producto">
+            <img src="./assets/img/sandia.jpg">
+            <h3>Sandía</h3>
+            <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
+        </div>
 
-        <main class="box main">
+        <div class="producto">
+            <img src="./assets/img/nube1.jpg">
+            <h3>Nube</h3>
+            <button class="add-cart" data-name="Nube">Agregar al carrito</button>
+        </div>
 
-            <div class="producto">
-                <img src="./assets/img/sandia.jpg" alt="cole o scrunchie con colores de la sandia">
-                <h3>Modelo: Sandia</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
+        <div class="producto">
+            <img src="./assets/img/flor1.jpg">
+            <h3>Flor</h3>
+            <button class="add-cart" data-name="Flor">Agregar al carrito</button>
+        </div>
 
-            <div class="producto">
-                <img src="./assets/img/nube1.jpg"
-                    alt="cole o scrunchie diseño nube de tres colores. negro,blanco y gris">
-                <h3>Modelo:T-color Nube</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
+    </main>
 
-            <div class="producto">
-                <img src="./assets/img/nube2.jpg"
-                    alt="cole o scrunchie diseño nube. amarillo, verde, azul y naranja">
-                <h3>Modelo: t-color Nube</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
+    <!-- FOOTER -->
+    <footer class="pie-pagina">
+        <p>Todos los derechos reservados</p>
+    </footer>
 
-            <div class="producto">
-                <img src="./assets/img/nube3.jpg"
-                    alt="cole o scrunchie diseño nube de tres colores. amarillo,rosado y morado">
-                <h3>Modelo:T-color Nube </h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
+</div>
 
-            <div class="producto">
-                <img src="./assets/img/chascon1.jpg"
-                    alt="cole o scrunchie diseño chascón. rosado">
-                <h3>Modelo:Chascón Rosado</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="./assets/img/chascon2.jpg" alt="cole o scrunchie diseño chascón Morado">
-                <h3>Modelo:Chascón Morado</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="./assets/img/flor1.jpg" alt="cole o scrunchie diseño flor color amarillo, naranjo, verde y azul">
-                <h3>Modelo:T-Color Flor </h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="./assets/img/flor2.jpg" alt="cole o scrunchie color turquesa">
-                <h3>Modelo:T-Color Flor</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="./assets/img/flor3.jpg">
-                <h3>Modelo:Flor Turquesa</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="./assets/img/flor4.jpg">
-                <h3>Modelo:Flor Morada</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="./assets/img/morado.jpg">
-                <h3>Modelo: Morado</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="./assets/img/turquesa.jpg">
-                <h3>Modelo: Turquesa</h3>
-                <button class="add-cart" data-name="Sandía">Agregar al carrito</button>
-            </div>
-
-
-
-            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group me-2" role="group" aria-label="First group">
-                    <button type="button" class="btn btn-outline-secondary">
-                        << </button>
-                            <button type="button" class="btn btn-outline-secondary">1</button>
-                            <button type="button" class="btn btn-outline-secondary">2</button>
-                            <button type="button" class="btn btn-outline-secondary">3</button>
-                            <button type="button" class="btn btn-outline-secondary">>></button>
-                </div>
-            </div>
-
-        </main>
-
-
-        <footer class="box pie-pagina">
-            <div class="icon-footer"><i class="fa-brands fa-facebook fa-lg"></i>
-                <i class="fa-brands fa-instagram fa-lg"></i>
-            </div>
-            <p>Todos los derechos reservados</p>
-        </footer>
-
-    </div>
-                            
+<!-- 🛒 CARRITO -->
 <div class="cart">
-    <h2>🛒 Carrito</h2>
+    <h3>🛒 Carrito</h3>
     <ul id="cart-list"></ul>
     <p>Total: $<span id="cart-total">0</span></p>
-</div>                    
-                            
-<script>
-const btn = document.getElementById("menuBtn");
-const menu = document.getElementById("menuLinks");
+</div>
 
-btn.addEventListener("click", () => {
-    menu.classList.toggle("show");
-});
-</script>
-                            
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-                            
+<script src="./assets/js/index.js"></script>
+
 </body>
-
 </html>
