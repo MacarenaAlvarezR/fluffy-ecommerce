@@ -32,3 +32,5 @@ Proyecto de sitio web tipo catálogo de productos desarrollado con **HTML y CSS*
 
 ```bash
 git clone https://github.com/MacarenaAlvarezR/media-queries
+
+Actualización GitHub Pages
